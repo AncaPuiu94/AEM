@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1522670211543
-Build-Jdk: 1.8.0_144
+Bnd-LastModified: 1522748315429
+Build-Jdk: 1.8.0_161
 Built-By: dan.creanga
 Bundle-Description: Core bundle for AEM62App
 Bundle-ManifestVersion: 2
@@ -22,24 +22,16 @@ Import-Package: javax.inject;version="0.0.0",javax.annotation,javax.serv
  apache.sling.api.servlets;version="[2.1,3)",org.apache.sling.models.ann
  otations;version="[1.2,2)",org.apache.sling.settings;version="[1.3,2)",
  org.osgi.service.event;version="[1.3,2)",org.slf4j;version="[1.5,2)"
-Originally-Created-By: Apache Maven Bundle Plugin
 Provide-Capability: osgi.service;objectClass:List<String>="java.lang.Run
  nable",osgi.service;objectClass:List<String>="javax.servlet.Filter",osg
  i.service;objectClass:List<String>="javax.servlet.Servlet",osgi.service
- ;objectClass:List<String>="org.osgi.service.event.EventHandler",osgi.se
- rvice;objectClass:List<String>="javax.servlet.Filter",osgi.service;obje
- ctClass:List<String>="javax.servlet.Servlet",osgi.service;objectClass:L
- ist<String>="org.osgi.service.event.EventHandler"
-Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))",o
- sgi.extender;filter:="(&(osgi.extender=osgi.component)(version>=1.3.0)(
- !(version>=2.0.0)))"
+ ;objectClass:List<String>="org.osgi.service.event.EventHandler"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compone
+ nt)(version>=1.3.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.ee=Ja
+ vaSE)(version=1.8))"
 Service-Component: OSGI-INF/com.aem.community.core.filters.LoggingFilter
  .xml,OSGI-INF/com.aem.community.core.listeners.SimpleResourceListener.x
  ml,OSGI-INF/com.aem.community.core.schedulers.SimpleScheduledTask.xml,O
- SGI-INF/com.aem.community.core.servlets.SimpleServlet.xml,OSGI-INF/com.
- aem.community.core.filters.LoggingFilter.xml,OSGI-INF/com.aem.community
- .core.listeners.SimpleResourceListener.xml,OSGI-INF/com.aem.community.c
- ore.schedulers.SimpleScheduledTask.xml,OSGI-INF/com.aem.community.core.
- servlets.SimpleServlet.xml
+ SGI-INF/com.aem.community.core.servlets.SimpleServlet.xml
 Sling-Model-Packages: com.aem.community.core
 Tool: Bnd-3.3.0.201609221906

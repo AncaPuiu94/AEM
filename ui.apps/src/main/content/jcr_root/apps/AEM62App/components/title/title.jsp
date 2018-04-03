@@ -15,14 +15,17 @@
 
   Draws a title either store on the resource or from the page
 
---%><%@include file="/libs/foundation/global.jsp"%><%
-%><%@ page import="java.util.Iterator,
+--%><%@include file="/libs/foundation/global.jsp"%>
+<%
+%><%@ page
+	import="java.util.Iterator,
         org.apache.commons.lang3.StringEscapeUtils,
         com.day.cq.commons.Doctype,
         com.day.cq.commons.DiffInfo,
         com.day.cq.commons.DiffService,
         org.apache.sling.api.resource.Resource,
-        org.apache.sling.api.resource.ResourceUtil" %><%
+        org.apache.sling.api.resource.ResourceUtil"%>
+<%
 
     // first calculate the correct title - look for our sources if not set in paragraph
     String title = properties.get(NameConstants.PN_TITLE, String.class);
@@ -87,16 +90,21 @@
         long tstamp = properties.get("jcr:lastModified", properties.get("jcr:created", System.currentTimeMillis()));
         suffix += "/" + tstamp + ".png";
         String xs = Doctype.isXHTML(request) ? "/" : "";
-        %><img src="<%= xssAPI.getValidHref(resource.getPath()+".title.png"+suffix) %>" alt="<%= xssAPI.encodeForHTMLAttr(title) %>"<%=xs%>><%
+        %><img
+	src="<%= xssAPI.getValidHref(resource.getPath()+".title.png"+suffix) %>"
+	alt="<%= xssAPI.encodeForHTMLAttr(title) %>" <%=xs%>>
+<%
 
     // large title
     } else if (diffOutput == null) {
-        %><h1><%= title %></h1><%
+        %><h1><%= title %></h1>
+<%
 
     // we need to display the diff output
     } else {
         // don't escape diff output
-        %><h1><%= diffOutput %></h1><%
+        %><h1><%= diffOutput %></h1>
+<%
 
     }
 
