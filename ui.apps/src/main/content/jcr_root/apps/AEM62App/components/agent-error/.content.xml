@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cog="http://www.cognifide.com/cq5/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          cog:additionalCssClassNames="[component]"
+          cq:isContainer="{Boolean}false"
+          jcr:primaryType="cq:Component"
+          jcr:title="Agent error"
+          allowedParents="*"
+          componentGroup=".hidden"
+          sling:resourceSuperType="onecms/componentVariant/components/variantAware"
+          jcr:mixinTypes="{Name}[vm:RegistrableComponent]">
+</jcr:root>
