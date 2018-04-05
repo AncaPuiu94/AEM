@@ -4,7 +4,11 @@
 <comment>AEM62App - UI content</comment>
 <entry key="createdBy">igor.cuiumju</entry>
 <entry key="name">AEM62App.ui.content</entry>
+<<<<<<< HEAD
 <entry key="created">2018-04-03T11:05:03.509+0300</entry>
+=======
+<entry key="created">2018-04-03T12:38:38.511+0300</entry>
+>>>>>>> d250946c90da56ae1dfc7185d900e38a23566ae4
 <entry key="groupId">AEM62App</entry>
 <entry key="version">1.0-SNAPSHOT</entry>
 <entry key="requiresRoot">false</entry>
