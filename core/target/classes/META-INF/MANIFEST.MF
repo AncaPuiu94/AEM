@@ -1,7 +1,13 @@
 Manifest-Version: 1.0
+<<<<<<< HEAD
 Bnd-LastModified: 1523446517014
 Build-Jdk: 1.8.0_144
 Built-By: anca.puiu
+=======
+Bnd-LastModified: 1522931256394
+Build-Jdk: 1.8.0_161
+Built-By: igor.cuiumju
+>>>>>>> 19e8e480c23362d5a01adae73c5135ac041f0f0c
 Bundle-Description: Core bundle for AEM62App
 Bundle-ManifestVersion: 2
 Bundle-Name: AEM62App - Core
