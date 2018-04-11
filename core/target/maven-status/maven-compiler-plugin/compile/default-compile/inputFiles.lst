@@ -1,6 +1,6 @@
-C:\Users\igor.cuiumju\Documents\workspace\aem_project\core\src\main\java\com\aem\community\core\package-info.java
-C:\Users\igor.cuiumju\Documents\workspace\aem_project\core\src\main\java\com\aem\community\core\schedulers\SimpleScheduledTask.java
-C:\Users\igor.cuiumju\Documents\workspace\aem_project\core\src\main\java\com\aem\community\core\servlets\SimpleServlet.java
-C:\Users\igor.cuiumju\Documents\workspace\aem_project\core\src\main\java\com\aem\community\core\models\HelloWorldModel.java
-C:\Users\igor.cuiumju\Documents\workspace\aem_project\core\src\main\java\com\aem\community\core\listeners\SimpleResourceListener.java
-C:\Users\igor.cuiumju\Documents\workspace\aem_project\core\src\main\java\com\aem\community\core\filters\LoggingFilter.java
+C:\AdobeCQ\New folder\core\src\main\java\com\aem\community\core\package-info.java
+C:\AdobeCQ\New folder\core\src\main\java\com\aem\community\core\models\HelloWorldModel.java
+C:\AdobeCQ\New folder\core\src\main\java\com\aem\community\core\schedulers\SimpleScheduledTask.java
+C:\AdobeCQ\New folder\core\src\main\java\com\aem\community\core\listeners\SimpleResourceListener.java
+C:\AdobeCQ\New folder\core\src\main\java\com\aem\community\core\servlets\SimpleServlet.java
+C:\AdobeCQ\New folder\core\src\main\java\com\aem\community\core\filters\LoggingFilter.java
