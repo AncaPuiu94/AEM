@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1522931256394
+Bnd-LastModified: 1523515733871
 Build-Jdk: 1.8.0_161
 Built-By: igor.cuiumju
 Bundle-Description: Core bundle for AEM62App
