@@ -1,4 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: com.aem.community.core.models.TestHelloWorldModel
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.697 s - in com.aem.community.core.models.TestHelloWorldModel
+=======
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.47 s - in com.aem.community.core.models.TestHelloWorldModel
+
+>>>>>>> ab47118294efcbf3b6c04fd8b4e6ff58f43d46bb

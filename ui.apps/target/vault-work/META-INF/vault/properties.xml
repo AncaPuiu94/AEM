@@ -2,9 +2,13 @@
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
 <comment>AEM62App - UI apps</comment>
-<entry key="createdBy">igor.cuiumju</entry>
+<entry key="createdBy">anca.puiu</entry>
 <entry key="name">AEM62App.ui.apps</entry>
+<<<<<<< HEAD
 <entry key="created">2018-04-11T15:38:24.664+0300</entry>
+=======
+<entry key="created">2018-04-11T14:35:18.615+0300</entry>
+>>>>>>> ab47118294efcbf3b6c04fd8b4e6ff58f43d46bb
 <entry key="groupId">AEM62App</entry>
 <entry key="version">1.0-SNAPSHOT</entry>
 <entry key="requiresRoot">false</entry>
