@@ -1,1 +1,12 @@
-<h1 data-sly-use.title="training-title.js">${title.text}</h1>
+<div data-sly-use.title="training-title.js">
+    <h1>
+        <a href=${title.textPath}>
+            <span id="italic"></span>
+            	${title.text} 
+			<span id="closeitalic"></span>
+		</a>
+	</h1>
+    <img src="${title.imageDrop}"/>
+	<img src="${title.imagePath}"/>
+</div>
+

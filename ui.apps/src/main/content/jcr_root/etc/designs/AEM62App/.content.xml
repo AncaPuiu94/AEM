@@ -2,6 +2,8 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
+        cq:lastModified="{Date}2018-04-12T16:19:45.423+03:00"
+        cq:lastModifiedBy="admin"
         jcr:primaryType="nt:unstructured"
         jcr:title="AEM62App Design"
         sling:resourceType="wcm/core/components/designer">
@@ -35,19 +37,19 @@
         </page>
         <home-page jcr:primaryType="nt:unstructured">
             <par
-                jcr:lastModified="{Date}2018-04-11T10:41:01.233+03:00"
+                jcr:lastModified="{Date}2018-04-12T16:19:45.419+03:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="wcm/foundation/components/parsys"
+                sling:resourceType="foundation/components/parsys"
                 components="[/apps/AEM62App/components/title-Dan]">
                 <section jcr:primaryType="nt:unstructured"/>
             </par>
             <parAnca
-                jcr:lastModified="{Date}2018-04-11T11:22:43.105+03:00"
+                jcr:lastModified="{Date}2018-04-11T16:49:58.426+03:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/parsys"
-                components="[/apps/AEM62App/components/title-anca]">
+                components="[/apps/AEM62App/components/title-anca,/apps/AEM62App/components/hero]">
                 <section jcr:primaryType="nt:unstructured"/>
             </parAnca>
         </home-page>
@@ -55,4 +57,5 @@
     <clientlib-all/>
     <clientlib-site/>
     <favicon.ico/>
+    <clientlibs/>
 </jcr:root>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Dialog"
     title="Title Anca Component"
     xtype="dialog">
@@ -17,22 +17,49 @@
                         fieldLabel="Title Anca"
                         name="./jcr:title"
                         xtype="textfield"/>
+                    <titlepath
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Select Title Path"
+                        name="./titlePath"
+                        rootPath="/content"
+                        suffix=".html"
+                        xtype="pathfield"/>
                     <image
                         jcr:primaryType="cq:Widget"
                         cropParameter="./imageCrop"
                         ddGroups="media"
-                        fieldLabel="Image Anca"
                         fileNameParameter="./fileName"
                         fileReferenceParameter="./fileReference"
-                        height="{Long}300"
+                        height="300"
                         mapParameter="./imageMap"
                         name="./file"
                         requestSuffix=".img.png"
                         rotateParameter="./imageRotate"
-                        title="Add Image piu"
+                        title="Image"
                         xtype="html5smartimage"/>
+                    <myBooleanCheckbox
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Make title italic"
+                        name="./myBooleanCheckbox"
+                        type="checkbox"
+                        xtype="selection">
+                        <listeners
+                            jcr:primaryType="nt:unstructured"
+                            selectionchanged="function(field,test,isChecked){checkedForItalic(field,test,isChecked);}"/>
+                    </myBooleanCheckbox>
+                    <imagepath
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Select Image Path"
+                        hidden="{Boolean}true"
+                        itemId="imagePath"
+                        name="./imagePath"
+                        rootPath="/content"
+                        xtype="pathfield"/>
                 </items>
             </tab1>
         </items>
     </items>
+    <listeners
+        jcr:primaryType="nt:unstructured"
+        beforesubmit="function(dialog){ return validateTitleAnca(dialog);}"/>
 </jcr:root>

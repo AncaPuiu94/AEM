@@ -1,43 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0"
-    xmlns:jcr="http://www.jcp.org/jcr/1.0"
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="cq:Dialog"
-    title="Edit image and title"
     height="475"
+    title="Edit image and title"
     width="550"
     xtype="dialog">
     <items jcr:primaryType="cq:WidgetCollection">
         <configuration
-        jcr:primaryType="cq:Widget"
-        title="Configuration"
-        xtype="dialogfieldset">
+            jcr:primaryType="cq:Widget"
+            title="Configuration"
+            xtype="dialogfieldset">
             <items jcr:primaryType="cq:WidgetCollection">
                 <title
                     jcr:primaryType="cq:Widget"
-                    fieldLabel="Title"
                     fieldDescription="Default title to be displayed if no parameters are found"
+                    fieldLabel="Title"
                     name="./title"
-                    xtype="textfield" />
+                    xtype="textfield"/>
                 <image
                     jcr:primaryType="cq:Widget"
-                    fieldLabel="Image"
+                    allowBlank="true"
+                    border="true"
                     disableZoom="{Boolean}true"
+                    fieldLabel="Image"
                     fileNameParameter="./image/fileName"
                     fileReferenceParameter="./image/fileReference"
-                    name="./image/file"
+                    height="100"
                     mapParameter=""
+                    name="./image/file"
                     requestSuffix="/logo.img.png"
                     sizeLimit="100"
-                    border="true"
-                    height="100"
-                    allowBlank="true"
-                    xtype="html5smartimage" />
+                    xtype="html5smartimage"/>
                 <imageResourceType
                     jcr:primaryType="cq:Widget"
                     ignoreData="{Boolean}true"
                     name="./image/sling:resourceType"
                     value="foundation/components/image"
-                    xtype="hidden" />
+                    xtype="hidden"/>
             </items>
         </configuration>
     </items>

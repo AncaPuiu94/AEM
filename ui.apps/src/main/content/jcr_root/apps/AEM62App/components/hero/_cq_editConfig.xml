@@ -33,4 +33,7 @@
         jcr:primaryType="cq:InplaceEditingConfig"
         sling:resourceType="foundation/components/image"
         active="{Boolean}true"/>
+    <cq:listeners
+        jcr:primaryType="cq:EditListenersConfig"
+        afteredit="REFRESH_PAGE"/>
 </jcr:root>

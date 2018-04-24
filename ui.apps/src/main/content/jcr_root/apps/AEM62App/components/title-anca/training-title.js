@@ -1,11 +1,12 @@
 "use-strict";
 use(function(){
-    var CONST={
-        PROP_TITLE:"jcr:title",
-        PROP_PAGE_TITLE:"pageTitle",
-    }
     var title={};
-    title.text=granite.resource.properties[CONST.PROP_TITLE] || wcm.currentPage.properties[CONST.PROP_PAGE_TITLE]||wcm.currentPage.properties[CONST.PROP_TITLE] || wcm.currentPage.name;
+
+
+    title.text=properties.get("jcr:title") || "default title";
+	title.textPath=properties.get("titlePath")|| "default title path";
+    title.imageDrop=properties.get("fileReference");
+	title.imagePath=properties.get("imagePath");
     return title;
 
 });

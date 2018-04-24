@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    removeSingleParagraphContainer="{Boolean}true"
+    singleParagraphContainerReplacement="&quot;&quot;">
+    <misctools
+        jcr:primaryType="nt:unstructured"
+        features="*">
+        <specialCharsConfig jcr:primaryType="nt:unstructured">
+            <chars jcr:primaryType="nt:unstructured">
+                <pound
+                    jcr:primaryType="nt:unstructured"
+                    entity="&amp;#163;"/>
+            </chars>
+        </specialCharsConfig>
+    </misctools>
+    <edit
+        jcr:primaryType="nt:unstructured"
+        defaultPasteMode="plaintext"
+        stripHtmlTags="{Boolean}true"/>
+    <justify
+        jcr:primaryType="nt:unstructured"
+        features="*"/>
+    <findreplace
+        jcr:primaryType="nt:unstructured"
+        features="*"/>
+    <spellcheck
+        jcr:primaryType="nt:unstructured"
+        features="*"/>
+    <styles
+        jcr:primaryType="nt:unstructured"
+        features="*">
+        <styles jcr:primaryType="cq:WidgetCollection">
+            <strikethrough
+                jcr:primaryType="nt:unstructured"
+                cssName="strikethrough"
+                Text="Strike Through"/>
+        </styles>
+    </styles>
+</jcr:root>
